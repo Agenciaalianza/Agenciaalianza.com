@@ -1,1 +1,444 @@
-file:///C:/Users/built/Downloads/index_corregido%20(1).html
+
+
+    <title>Agencia AGENCIA ALIANZA MULTISERVICES INC. | DMV Services</title>todo tipo de tramite llamanos 
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #17324d;
+            background: #f4fbff;
+        }
+
+        /* MEN  */
+        header {
+            background: linear-gradient(135deg, #0879c9, #00b9e8);
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d9f7ff;
+        }
+
+        /* INICIO */
+        .hero {
+            min-height: 550px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+
+            background:
+                linear-gradient(
+                    rgba(0, 105, 180, 0.78),
+                    rgba(0, 188, 232, 0.78)
+                ),
+                url("https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: white;
+            color: #0879c9;
+            padding: 15px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #dff8ff;
+            transform: translateY(-2px);
+        }
+
+        /* SECCIONES */
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            color: #0879c9;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #60788d;
+        }
+
+        /* SERVICIOS */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .service {
+            background: white;
+            padding: 28px 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 100, 160, 0.10);
+            border-top: 5px solid #00b9e8;
+            transition: 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 25px rgba(0, 100, 160, 0.18);
+        }
+
+        .service .icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .service h3 {
+            color: #0879c9;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            color: #60788d;
+            line-height: 1.5;
+        }
+
+        /* SOBRE NOSOTROS */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 18px;
+            color: #50677a;
+        }
+
+        /* CONTACTO */
+        .contact {
+            background: linear-gradient(135deg, #0879c9, #00b9e8);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .contact a {
+            color: white;
+            font-weight: bold;
+        }
+
+        .phone {
+            display: inline-block;
+            margin-top: 25px;
+            background: white;
+            color: #0879c9 !important;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #063b63; YADIRA & MARVIN LISTOS PARA AYUDARTE
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* M VIL */
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h2 {
+                font-size: 23px;
+            }
+
+            section {
+                padding: 55px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MEN  -->
+    <header>
+
+        <div class="logo">
+            <img src="logo.png" alt="Agencia Alianza Multiservices INC." style="height:50px; width:auto; vertical-align:middle;">
+            <span>AGENCIA ALIANZA MULTISERVICES INC.</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <!-- INICIO -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <h1>AGENCIA ALIANZA MULTISERVICES INC.</h1>
+
+            <h2>DMV Services</h2>
+
+            <p>
+                Te ayudamos con tus tr mites de veh culos y servicios DMV
+                de manera sencilla y profesional.
+            </p>
+
+            <a class="button" href="#servicios">
+                Ver servicios
+            </a>
+
+            <a class="button" href="tel:16313757502">
+                ☎ Llamar ahora
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+
+        <div class="section-title">
+
+            <h2>Nuestros Servicios</h2>
+
+            <p>
+                Soluciones para tus principales tr mites DMV.
+            </p>
+
+        </div>
+
+        <div class="services">
+
+            <div class="service">
+                <div class="icon">🚗</div>
+                <h3>Registro de Veh culos</h3>
+                <p>
+                    Asistencia con tr mites de registro de veh culos.
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="icon">🚗</div>
+                <h3>Renovaci n de Registro</h3>
+                <p>
+                    Te ayudamos con la renovaci n de tu registro.
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="icon">🚗</div>
+                <h3>Transferencia de T tulo</h3>
+                <p>
+                    Asistencia con transferencias de t tulos de veh culos.
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="icon">🚗</div>
+                <h3>Placas</h3>
+                <p>
+                    Informaci n y asistencia para tr mites relacionados
+                    con placas.
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="icon">🚗</div>
+                <h3>Licencias</h3>
+                <p>
+                    Orientaci n para tr mites relacionados con licencias de conducir.
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="icon">🚗</div>
+                <h3>Permisos</h3>
+                <p>
+                    Asistencia con diferentes tr mites y permisos DMV.
+                </p>
+            </div>
+
+            <div class="service">
+                <div class="icon">🚗</div>
+                <h3>Cambio de Direcci n</h3>
+                <p>
+                    Ayuda con el cambio de direcci n en los registros
+                    correspondientes.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NOSOTROS -->
+    <section class="about" id="nosotros">
+
+        <div class="section-title">
+
+            <h2>Sobre Nosotros</h2>
+
+        </div>
+
+        <div class="about-content">
+
+            <p>
+                En <strong>Agencia Alianza MLS</strong> ofrecemos asistencia
+                con diferentes tr mites y servicios relacionados con el DMV.
+            </p>
+
+            <p>
+                Nuestro objetivo es facilitar el proceso y ayudarte a
+                realizar tus tr mites de manera clara y organizada.
+            </p>
+
+            <p>
+                📍 Flanders, NY 11901
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+
+        <h2>Cont ctanos</h2>
+
+        <p>
+             Necesitas ayuda con un tr mite DMV?
+        </p>
+
+        <p>
+           Marvin & Yadira estamos aqu  para ayudarte.
+        </p>
+
+        <p>
+            📍 Flanders, NY 11901
+        </p>
+
+        <a class="phone" href="tel:16313757502">
+            ☎ 631-375-7502
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+              2026 Agencia Alianza Multiservices INC>
+        </p>
+
+        <p>
+            DMV Services
+        </p>
+
+    </footer>
+
+</body>
+</html>
+                             
